@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas</title>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.10/cdn.js"></script>
+
+</head>
+<body>
+    <div x-data="{nama : 'nuril'}">
+        <div x-data="{umur : 19}">
+            <span x-text="nama"></span>
+            <span x-text="umur"></span>
+        </div>
+    </div>
+
+    <div x-data="{nama : 'nuril', nilai : 75}">
+        <h1>
+            Nama Saya : <span x-text="nama"></span>
+        </h1>
+        <h1>
+            Website Dasar : <span x-text="nilai"></span>
+        </h1>
+        <h2>
+            <span x-text="nilai >= 75 ? 'Tidak Mengulang': 'Harus Mengulang'"></span>
+           
+        </h2>
+    </div>
+</body>
